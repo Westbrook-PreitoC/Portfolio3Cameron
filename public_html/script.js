@@ -6,6 +6,14 @@
 
 
 $("document").ready(function(){
-   $(".CoolJam").css("background-color", "red");
-    
+   $(".CoolJam").css("background-color", 'yellow');
+   
+   $("p:nth-child(2)").css("background-color", 'red');
+   
+   $("p:nth-child(3)").css("background-color", 'pink'); 
+   
+   $("p:nth-child(4)").css("background-color", 'green');
+   
+   $("p:gt(1)").css("border-style", 'solid');
+   
 });
