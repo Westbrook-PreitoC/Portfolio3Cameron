@@ -8,12 +8,23 @@
 $("document").ready(function(){
    $(".CoolJam").css("background-color", 'yellow');
    
-   $("p:nth-child(2)").css("background-color", 'red');
+   $('p:last').css({"background-color": "purple", "color": "white"});
    
-   $("p:nth-child(3)").css("background-color", 'pink'); 
+   $("h1").bind("mouseover", mouseOverMe).bind('mouseout', mouseOutMe);
    
-   $("p:nth-child(4)").css("background-color", 'green');
-   
-   $("p:gt(1)").css("border-style", 'solid');
-   
+   $('h1').bind('click', mouseClick);
+  
 });
+
+function mouseOverMe(){
+    $("h1").html("This is easy");
+}
+
+function moseOverMe(){
+    $("h1").html("CamTron is cool");
+}
+
+function mouseClick(){
+    
+    $("p").html("jadoifjadoia[dhgiuakguishfuisadshdfgiushfgi");
+}
