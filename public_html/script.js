@@ -13,8 +13,29 @@ $("document").ready(function(){
    $("h1").bind("mouseover", mouseOverMe).bind('mouseout', mouseOutMe);
    
    $('h1').bind('click', mouseClick);
-  
+   
+   $('#replaceWText').text('Replaced!');
+   
+   $('#randPara').bind('click', addAPara);
+   
+   $('#removePara').bind('click', removeAPara);
 });
+
+function mouseOutMe(){
+    
+}
+
+function removeAPara(){
+    $('#randPara p:last').remove();
+}
+
+function addAPara(){
+    $('#randPara').append('<p>ADDED</p>');
+}
+
+function replaceWText(){
+    $('#replaceWText').text('Replaced!');
+}
 
 function mouseOverMe(){
     $("h1").html("This is easy");
