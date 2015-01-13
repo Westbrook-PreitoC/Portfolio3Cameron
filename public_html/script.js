@@ -6,7 +6,9 @@
 
 
 $("document").ready(function(){
-   $(".CoolJam").css("background-color", 'yellow');
+    $(".background").css("background-image", "url(http://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Fresno_State_Bulldogs_Logo.svg/496px-Fresno_State_Bulldogs_Logo.svg.png)");
+    
+   $(".CoolJam").css("background-color", 'white');
    
    $('p:last').css({"background-color": "purple", "color": "white"});
    
