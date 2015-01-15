@@ -5,72 +5,80 @@
  */
 
 
-$("document").ready(function(){
-    $(".background").css("background-image", "url(http://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Fresno_State_Bulldogs_Logo.svg/496px-Fresno_State_Bulldogs_Logo.svg.png)");
-    
-   $(".CoolJam").css("background-color", 'white');
-   
-   $('p:last').css({"background-color": "purple", "color": "white"});
-   
-   $("h1").bind("mouseover", mouseOverMe).bind('mouseout', mouseOutMe);
-   
-   $('h1').bind('click', mouseClick);
-   
-   $('#replaceWText').text('Replaced!');
-   
-   $('#randPara').bind('click', addAPara);
-   
-   $('#removePara').bind('click', removeAPara);
-   
+$("document").ready(function() {
+    $(".background").css("background-image", "url(http://www.biltmorerecords.com/blog/wp-content/uploads/2014/01/Carolina-Panthers.jpg)");
+
+    $('#superHumans').accordion({header: "h3"});
+
+    $(".CoolJam").css("background-color", 'white');
+
+    $('p:last').css({"background": "purple", "color": "white"});
+
+    $("h1").bind("mouseover", mouseOverMe).bind('mouseout', mouseOutMe);
+
+    $('h1').bind('click', mouseClick);
+
+    $('#replaceWText').text('Replaced!');
+
+    $('#randPara').bind('click', addAPara);
+
+    $('#removePara').bind('click', removeAPara);
+
     $('#show').css('visibility', 'hidden');
-   
-   $('#hide').bind('click', hideThePage);
-   
-   $('#show').bind('click', showThePage);
-   
-   $('#toggleText').bind('click', toggleTheText);
+
+    $('#hide').bind('click', hideThePage);
+
+    $('#show').bind('click', showThePage);
+
+    $('#toggleText').bind('click', toggleTheText);
 });
 
-function mouseOutMe(){
-    
+function mouseOutMe() {
+
 }
 
-function hideThePage(){
+//this is the part that makes sure that you hide the page 
+
+function hideThePage() {
     $('#show').css('visibility', 'visible');
     $('div').hide('slide', {}, 2500);
     $('#show').show('fold', {}, 2500);
 }
 
-function showThePage(){
+//this is the part that makes sure that you show the page 
+
+function showThePage() {
     $('div').show('fold', {}, 2500);
     $('#show').hide('puff', {}, 2500);
 }
 
-function removeAPara(){
+function removeAPara() {
     $('#randPara p:last').remove();
 }
 
-function addAPara(){
-    $('#randPara').append('<p>ADDED</p>');
+function addAPara() {
+    $('#randPara').append('<p>Carolina Panthers</p>');
 }
 
-function replaceWText(){
+function replaceWText() {
     $('#replaceWText').text('Replaced!');
 }
 
-function mouseOverMe(){
+function mouseOverMe() {
     $("h1").html("This is easy");
 }
 
-function moseOverMe(){
+function moseOverMe() {
     $("h1").html("CamTron is cool");
 }
 
-function mouseClick(){
-    
+//this function you clic on a certain spot to change words and letters
+
+function mouseClick() {
+
     $("p").html("jadoifjadoia[dhgiuakguishfuisadshdfgiushfgi");
 }
 
 function toggleTheText() {
-    $('#h4')
+    $('#h4').toggle(2500);
 }
