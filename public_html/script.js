@@ -60,6 +60,8 @@ function addAPara() {
     $('#randPara').append('<p>Carolina Panthers</p>');
 }
 
+//this is the part that makes sure to replace the line of code thatt is needed
+
 function replaceWText() {
     $('#replaceWText').text('Replaced!');
 }
