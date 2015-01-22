@@ -10,9 +10,9 @@ $("document").ready(function() {
 
     $('#superHumans').accordion({header: "h3"});
 
-    $(".CoolJam").css("background-color", 'white');
+    $(".CoolJam").css("background-color", 'green');
 
-    $('p:last').css({"background": "purple", "color": "white"});
+    $('p:last').css({"background": "white", "color": "grey"});
 
     $("h1").bind("mouseover", mouseOverMe).bind('mouseout', mouseOutMe);
 
@@ -66,9 +66,12 @@ function replaceWText() {
     $('#replaceWText').text('Replaced!');
 }
 
+//this line of code tells us how mouseoverme is to make it to where you can hover over the words and the change to this  
+
 function mouseOverMe() {
-    $("h1").html("This is easy");
+    $("h1").html("Portfolio 3");
 }
+
 
 function moseOverMe() {
     $("h1").html("CamTron is cool");
